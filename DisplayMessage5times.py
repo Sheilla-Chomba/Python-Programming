@@ -1,4 +1,4 @@
-# Below is the programming exercise
+# Below is the programming exercise- Ex1.2
 # (Display the same message five times) Write a program that displays Welcome to
 # Python five times.
 print("Welcome to Python")
