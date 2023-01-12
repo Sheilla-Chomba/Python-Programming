@@ -6,18 +6,18 @@ import time
 currentTime=time.time()
 
 # Returns current Seconds
-currentSeconds=currentTime%60
+currentSeconds=int(currentTime%60)
 
 # Returns tha remaining seconds
 remainSeconds=currentTime//60
 
 # This indicates the current minutes
-currentMin=remainSeconds%60
+currentMin=int(remainSeconds%60)
 
 # This indicates the remaining minutes
 remainMin=remainSeconds//60
 
 # This indicates the current hours
-currentHours=remainMin%60
+currentHours=int(remainMin%24)
 
 print("The time in GMT is ",currentHours,":",currentMin,":",currentSeconds)
