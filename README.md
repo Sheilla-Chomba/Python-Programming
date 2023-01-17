@@ -4,3 +4,4 @@ This activity will mainly help me build my portfolio and grow my skills.
 The exercises from Introduction to programming using Python by Y. Daniel Liang are split into chapters, ie.
   1. Introduction to Python
   2. Elemetary programming
+  3. Mathematical Functions, Strings and Objects
