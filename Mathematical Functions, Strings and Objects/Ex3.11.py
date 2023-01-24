@@ -6,7 +6,7 @@
 number=eval(input("Enter any four digit number: "))
 
 while number<1000 or number>9999:
-    number = eval(input("Input was incorrect.Kindly enter any four digit number: "))
+    number = eval(input("Input was incorrect. Kindly enter any four digit number: "))
 
 digit1=number//1000
 remNum1=number%1000
