@@ -17,6 +17,7 @@ stateTotal=(stateTax/100)*grossPay
 deductions=stateTotal+federalTotal
 netPay=grossPay-deductions
 
+print("\nBelow is the deductions for Employee.")
 print(f"Employee name: {name}")
 print(f"Hours worked: {hours}")
 print(f"Pay rate: {hourlyRate}")
