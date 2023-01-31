@@ -13,24 +13,24 @@ currentHours=hours%24
 
 # Prompts user to input their timezone
 gmt=eval(input("Enter your timezone: "))
+while gmt>14 or gmt<-12:
+    gmt = eval(input("Wrong input. Enter your timezone: "))
+
 actualHours=currentHours+gmt
 
 if int(actualHours)<1:
     actualHours = actualHours + 12
     print(int(actualHours), ":", int(currentMinutes), ":", int(currentSeconds), "PM the previous day")
-if int(actualHours)>23:
+elif int(actualHours)>23 and int(actualHours)!=24:
+    actualHours = actualHours - 24
+    print(int(actualHours), ":", int(currentMinutes), ":", int(currentSeconds), "AM the next day")
+elif int (actualHours)==24:
     actualHours = actualHours - 12
     print(int(actualHours), ":", int(currentMinutes), ":", int(currentSeconds), "AM the next day")
-
-
-if int(actualHours)//12==0:
+elif int(actualHours)//12==0:
     print(int(actualHours), ":", int(currentMinutes), ":", int(currentSeconds), "AM")
-
-if int(actualHours)//12==1:
+elif int(actualHours)//12==1 and int(actualHours)>12:
     actualHours=actualHours-12
     print(int(actualHours), ":", int(currentMinutes), ":", int(currentSeconds),"PM")
-
-
-
-#print(int(actualHours),":",int(currentMinutes),":",int(currentSeconds))    # Prints out the actual Hour according to the GMT
-print (currentHours)
+else:
+    print(int(actualHours), ":", int(currentMinutes), ":", int(currentSeconds), "PM")
