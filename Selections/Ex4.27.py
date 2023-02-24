@@ -3,7 +3,7 @@
 # x- and y-coordinates and determines whether the point is inside the triangle.
 
 import math
-# Prompts user to type in the points to check whether they are inside the rectangle
+# Prompts user to type in the points to check whether they are inside the triangle
 x=eval(input("What is the x coordinate: "))
 y=eval(input("What is the y coordinate: "))
 
