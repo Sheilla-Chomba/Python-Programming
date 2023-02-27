@@ -1,4 +1,4 @@
-# Below is a case study for giving users 5 subtraction quizes
+# Below is a case study for giving users 5 subtraction quizzes
 
 from random import randint
 
