@@ -24,4 +24,5 @@ while ultimateWord!="DONE":
     except:
         words[ultimateWord] = 1
 
+del words["DONE"]
 print(words)
